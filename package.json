@@ -1,16 +1,19 @@
 {
-  "name": "project.000708323",
+  "name": "veloxity-frontend",
   "version": "1.0.0",
+  "homepage": "https://ehlvg.github.io/veloxity-fr",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html",
-    "build": "parcel build index.html --public-url /veloxity-fr/"
+    "build": "parcel build index.html --public-url /veloxity-fr/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "parcel": "^2.15.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
